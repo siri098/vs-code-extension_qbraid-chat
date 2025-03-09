@@ -1,0 +1,17 @@
+# Exclude unnecessary files and folders
+.vscode/**
+.vscode-test/**
+src/**                   # TypeScript source files (we use the compiled JS in `out/`)
+.git/**                  # Git-related files
+.gitignore               # Git ignore file
+yarn.lock
+package-lock.json
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+
+# Include necessary node_modules
+!node_modules/dotenv/**
+!node_modules/axios/**
